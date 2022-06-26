@@ -12,3 +12,6 @@
 - 물론 es방식(esm)으로도 사용할 수 있으며 이때는 type="module"을 추가해줘야 함
 
 2. 외부 라이브러리(ex. date-fns)를 사용하는 모듈을 만들어서 하나의 (.min).js 파일로 사용한지 여부 체크
+
+- date-fns를 그냥 사용하려고 하면 (!) Unresolved dependencies 이라고 뜨면서 의존성 모듈을 찾지 못함
+- @rollup/plugin-node-resolve 을 설치한 후에 plugins에 적용하면 된다.
